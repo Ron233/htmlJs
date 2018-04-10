@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>if分支语句</title>
+</head>
+<body>
+    <script>
+        /*
+        if:语句，如果表达式的值为true,则执行大括号里的js代码，否则不执行
+
+        if(表达式){
+            js代码
+        }
+        */ 
+        var a= 2;
+
+        if(a>1){
+            console.log('a>1');
+        };
+
+        /*
+        if(){}else{}
+        如果表达式为true,则执行js语句1，否则则执行js语句2
+        if(表达式1){js1}else{js2}
+        */ 
+        var a = 2;
+        if(a>10){
+            console.log('a>10');
+        }else{
+            console.log('a<10');
+        }
+
+        //判断一个数是奇数还是偶数
+        var a= 11;
+        if(a%2==0){
+            console.log('a为偶数')
+        }else{
+            console.log('a为奇数')
+        }
+
+        // 求两个数中较大的数
+        var a= 10,b=20;
+        if(a>b){
+            console.log('a>b');
+        }else{
+            console.log('a<b')
+        }
+        
+        // 判断某年是平年还是闰年
+        var year = 2018;
+        if((year%4==0&&year%100!=0)||year%400){
+            console.log('是闰年')
+        }else{
+            console.log("不是闰年")
+        }
+
+    </script>
+</body>
+</html>

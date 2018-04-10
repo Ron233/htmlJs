@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>运算符简单实用</title>
+</head>
+<body>
+   <script>
+        /*
+        运算符的简单使用
+        四则运算
+        +,-,*,/,%
+        //数值运算 
+    */
+    var box = 12+3;
+    console.log(box);//15
+
+    var box = 12-3;
+    console.log(box);//9
+
+    var box = 8*3;
+    console.log(box);//24
+
+    var box = 8/4;
+    console.log(box);//2
+
+    var box = 8%5;
+    console.log(3);
+
+    // 加法
+    //字符串的链接
+    var a = '一点一点的积累';
+    var b = '会积累成山';
+    console.log(a+b);//一点一点的积累会堆积成山
+
+    //字符串和number
+    // 会把number转化为字符串进行拼接
+    var a = 123;
+    var b = '456';
+    console.log(a+b);//'123456'
+
+    // 字符串加Boolean
+    //先把Boolean转化为字符串在拼接
+    console.log(true+'123');//true123
+    
+
+    //减法
+    //先把字符串转化为number在减
+    var  a = 15;
+    var b = '5';
+    console.log(a-b);//10
+
+    // 除法
+    //Infinity
+    var box = 1/0;
+    console.log(box);
+    //nan
+    var box = 0/0;
+    console.log(box);
+    // 类型转化
+    // parseInt();把一个数字类型转化为整形
+    //取整
+    var a = 1.2;
+    console.log(parseInt(a));//1    
+
+    var b = '3.14b';
+    console.log(parseInt(b))
+
+    // 四舍五入
+    var a = 4.5;
+    console.log(Math.round(a));
+    
+    //进制转化
+    /*
+    11 十进制
+    1*10^+1*10^1 = 11
+
+    11二进制
+    1*2^0+1*2^1 = 3
+
+    11八进制
+    1*8^0 + 1*8^1 = 9
+
+    11十六进制
+    1*16^0 + 1*16^1 = 17
+    */
+   </script>
+</body>
+</html>

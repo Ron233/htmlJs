@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>变量</title>
+</head>
+<body>
+    <script>
+        // js代码
+        // 变量就是可以改变的量
+        var age;//声明一个变量，var 是关键字，用来声明变量 age是变量名
+        console.log(age);//undefined,未定义，只声明没赋值
+
+        age = 14; // = 赋值
+        console.log(age);
+
+        //js变量可以重复赋值，而且不受变量类型影响
+        
+        // js变量还可以重复声明，而且可以覆盖前面的
+        // 声明的同时也给这个变量赋值
+        var age = 10;
+
+        // 一次声明多个变量
+        var a = 'list',b='list2',c='list3';
+        console.log('a:'+a,'b:'+b,'c:'+c);
+
+        // js是弱类型的语言，用var 声明一个变量，若声明时不赋值就不知道他的类型
+
+        // typeof判断一个变量的类型
+        var temp;
+        console.log(temp);//undefined
+
+        temp = '两岸猿声啼不住';
+        alert(typeof temp);//string
+
+        /*
+        标识符的命名规范，变量名，函数名
+        1.字母，数组下划线，或者美元符号
+        2.首字母不能为数字
+        3.不能使用系统关键字
+        4.尽量使用驼峰命名规则
+        5.命名尽量见名知意
+        */
+    </script>
+</body>
+</html>

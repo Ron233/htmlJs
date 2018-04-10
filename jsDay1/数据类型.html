@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>数据类型</title>
+</head>
+<body>
+    <script>
+        /*
+        数据类型：
+        布尔类型    boolean
+        数字类型    number
+        字符串类型  string
+        数组类型    array
+        对象类型    object
+        特殊类型    undefined,null
+        */
+        //typeof 检测数据类型
+        var boss = 'jack';
+        console.log(typeof boss);//string
+        console.log(typeof 'jack');
+
+        // Undefined类型
+        var my;//undefined
+
+        // null类型
+        var my = null;
+        conole.log(my);
+
+        // number数字类型
+        var box = 1233;
+        console.log(box);//number
+
+        // 无穷大
+        var box = 1/0;
+        console.log(boox);//Infinity
+        console.log(-1/0);//-Infinity
+        
+        // NaN
+        var box = 0/0;
+        console.log(box);//NaN
+
+        /*
+        isNaN()是不是不合法的数值
+        数值或者数值类型的字符串都是合法的
+        布尔类型,true.false 就是 0,1
+        */
+        console.log(isNaN(NaN));//true
+        console.log(isNaN(1232));//false
+        console.log(isNaN(true));//false
+        console.log(isNaN(false));//false
+
+        // boolean类型 真和假
+        var isTrue = true;
+        console.log(isTrue);//rtue
+
+        //Boolean()将非逻辑转换成逻辑值
+        var hello,hello2='123';
+        console.log(Boolean(hello),Boolean(hello2));
+
+        /*
+        string
+        非空字符串转化为true,空字符串转换成false
+        number,非0转化为true,0转化为false
+        object,非null为true,null为false
+        undefined,undefined为false
+        */
+
+
+    </script>
+</body>
+</html>

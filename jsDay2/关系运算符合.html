@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>关系运算符</title>
+</head>
+<body>
+    <script>
+        /*
+        关系运算符
+        返回值是boolean
+        ==,!=,>,<,>=,<=,===
+
+        ===恒等于，值要相等，变量的类型也要相等
+        !==不恒等于，变量的值不相等，或者类型不相等
+        */
+
+        // 字符串和数字的比较
+        // 会把字符强制转换为数字进行比较,如果是非数值型字符串返回NaN
+        console.log(1=="1");//true
+        console.log('a'==1);//false
+
+        // 字符串与字符串进行比较,会将字符串转换为ascii码
+        console.log('a'<'b');
+        
+        console.log('abcd'>'abcc');//true
+        // 逐个字母进行比较,直到返回false或者比较完返回true
+
+        // boolean
+        console.log(true==1);//true
+        console.log(false==0);//true
+
+        // NaN和任何数值比较都返回false,NaN自己都不等于自己
+        console.log(NaN>3);//false
+        console.log(NaN<3);//false
+        console.log(NaN==3);//false
+        console.log(NaN==NaN);//false
+
+        // 特殊值undefined
+        console.log(undefined==null);//true
+        console.log(typeof undefined == typeof null);
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>逻辑运算符</title>
+</head>
+<body>
+    <script>
+        /*
+        逻辑运算符
+        与，或，非
+        &&，||，！
+
+        */
+        /*
+        %% 并且，与
+        两边都为真时为真，否则为假
+        console.log(true&&true)//true
+        console.log(true&&false)//false
+        console.log(false&&true)//false
+        console.log(false&&false)//false
+        */
+        /*
+        || 或,只要有真则为真
+        console.log(true||true)//true
+        console.log(true||false)//true
+        console.log(false||true)//true
+        console.log(false||false)//false
+        */ 
+        /*
+        ! 非,取反
+        console.log(!true)//false
+        console.log(!false)//true
+        */ 
+        // && 拓展
+        // 短路操作
+        var d = "a" && 0 && "c";
+        // console.log(d);//0
+
+        // 从前往后找,遇到false则直接返回false否则继续判断
+        var falg = true&&false&&true
+        // console.log(falg)//false
+
+        var falg1 = true&&true&&true
+        console.log(falg1);
+
+        // ! 取反
+        console.log(!'abcd')//false
+
+        /**
+        string:非空字符串为true,空字符串为false
+        number:0或者NaN 为false,其他为true
+        Object:NUll为false,非空字符串为true
+        Undefined:false
+        / 
+    </script>
+</body>
+</html>
